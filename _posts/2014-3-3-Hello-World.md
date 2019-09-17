@@ -1,10 +1,8 @@
 ---
 layout: post
-title: You're up and running!
+title: An Introduction to Zipf's Law in NLP
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+An interesting statistical phenomenon, that has been observed through examination of human language text corpora, is the tendency of word frequencies to be the inverse of their rank on a frequency table. For instance, a word ranked as the fifth most common word within a corpus, is bound to occur five times less frequently than the most frequently occuring word. To those who are big into math and statistics, this distribution of frequencies may have reminded you of the zeta distribution. However, while Zipf's law seems to be unique to natural language frequency distribution, according to Wikipedia, not only does this distribution occur within Esperonto data sets, but also a researcher named Li Wentian demonstrated that this distribution occurs within data sets of randomly, but equally distributed, generated characters. 
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+The reason why anyone working in NLP or with natural language data sets should know about Zipf's law is because of it's affect on distribution of vocabulary. Increasing a data set's size will generate more frequencies for previously less frequently occuring words, however it will also conversly generate new seldom frequently occuring words. Essentially, no matter the amount of unique vocabulary that is obtained from a single corpus, there will always be the problem of Zipf's distribution. Therefor, learning to account for words that occur a proportionally small amount of times, is necessary. Perhaps, the less frequently occuring words could simply be treated the same as unique or previously not seen words.
